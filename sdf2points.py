@@ -29,12 +29,12 @@ def npz2txt(path):
     with open(out_path, 'w') as f:
         for i in range(sdf1.shape[0]):
             f.write(str(sdf1[i][0])+' '+str(sdf1[i][1])+' '+\
-                    str(sdf1[i][2])+' '+str(sdf1[i][3]))
+                    str(sdf1[i][2])+' '+str(sdf1[i][3])+'\n')
         
         for i in range(sdf2.shape[0]):
             f.write(str(sdf2[i][0])+' '+str(sdf2[i][1])+' '+\
-                    str(sdf2[i][2])+' '+str(sdf2[i][3]))
+                    str(sdf2[i][2])+' '+str(sdf2[i][3])+'\n')
 
-if __name__ == '__main__':
-    #sdf = np.load(sys.argv[1])
+if __name__ == '__main_':
+    #sdf = np.load(argv[1])
     npz2txt(sys.argv[1])
